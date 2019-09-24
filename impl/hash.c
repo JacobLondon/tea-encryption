@@ -9,7 +9,7 @@ unsigned int hash(const char *text);
 int main()
 {
     char *text = "hash this!";
-    unsigned int result = hash("hash this!");
+    unsigned int result = hash(text);
     printf("Hash of '%s' is %u\n", text, result);
 }
 
