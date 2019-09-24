@@ -13,7 +13,7 @@ int main()
     printf("Hash of '%s' is %u\n", text, result);
 }
 
-// FNV1A (Fower-Noll-Vo) hash function
+// FNV1A (Fowler-Noll-Vo) hash function
 unsigned int hash(const char *text)
 {
     unsigned int hash = SEED;
