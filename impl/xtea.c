@@ -9,8 +9,10 @@ static void encipher(unsigned int num_rounds, uint32_t v[2], uint32_t const key[
     unsigned int i;
     uint32_t v0=v[0], v1=v[1], sum=0, delta=0x9E3779B9;
     for (i=0; i < num_rounds; i++) {
+        //     ---------tmp1---------------    ---------tmp2--------
         v0 += (((v1 << 4) ^ (v1 >> 5)) + v1) ^ (sum + key[sum & 3]);
         sum += delta;
+        //    ----------tmp3----------------    --------tmp4------------
         v1 += (((v0 << 4) ^ (v0 >> 5)) + v0) ^ (sum + key[(sum>>11) & 3]);
     }
     v[0]=v0; v[1]=v1;
@@ -50,9 +52,9 @@ int main()
     //char *plaintext = "abcdefgh";
     //char *keytext = "1234567812345678";
 
-    unsigned int rounds = 16;
+    unsigned int rounds = 64;
     uint32_t v[2] = { 0xDEADBEEF, 0xFEEBDAED };
-    uint32_t key[4] = { 0xFEEDBEEF, 0x000C0FFEE, 0xF0000011, 0x0FACADE0 };
+    uint32_t key[4] = { 0xFEEDBEEF, 0x00C0FFEE, 0xF0000011, 0x0FACADE0 };
 
     //from_ascii(plaintext, v, 2);
     //from_ascii(keytext, key, 4);
