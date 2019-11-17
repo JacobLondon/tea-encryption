@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.MATH_REAL.ALL;
 
-entity EncipherTea is
+entity TeaEncipher is
     Generic (
         g_ROUNDS : POSITIVE := 64
     );
@@ -12,9 +12,9 @@ entity EncipherTea is
         key         : in  UNSIGNED(127 downto 0);
         output_data : out UNSIGNED(63 downto 0)
     );
-end EncipherTea;
+end TeaEncipher;
 
-architecture Behavioral of EncipherTea is
+architecture Behavioral of TeaEncipher is
 
     type MEMORY is array(0 to g_ROUNDS) of UNSIGNED(63 downto 0);
     signal matrix : MEMORY := (others => (others => '0'));

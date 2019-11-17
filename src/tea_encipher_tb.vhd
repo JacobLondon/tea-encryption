@@ -2,13 +2,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL; 
 use IEEE.NUMERIC_STD.ALL;
 
-entity EncipherTeaTb is
+entity TeaEncipherTb is
     --Port()
-end EncipherTeaTb; 
+end TeaEncipherTb; 
 
-architecture Behavioral of EncipherTeaTb is
+architecture Behavioral of TeaEncipherTb is
 
-    component EncipherTea is
+    component TeaEncipher is
         Generic (
             g_ROUNDS : POSITIVE := 64
         );
@@ -27,7 +27,7 @@ begin
     din <= x"DEADBEEFFEEBDAED";
     key <= x"FEEDBEEF00C0FFEEF00000110FACADE0";
     
-    ENCODER: EncipherTea
+    ENCODER: TeaEncipher
         generic map (
             g_ROUNDS => 64
         )

@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL; 
 use IEEE.NUMERIC_STD.ALL;
 
-entity Encipher is
+entity XTeaEncipher is
     Generic (
         g_ROUNDS : POSITIVE := 64
     );
@@ -11,9 +11,9 @@ entity Encipher is
         key         : in  UNSIGNED(127 downto 0);
         output_data : out UNSIGNED(63 downto 0)
     );
-end Encipher;
+end XTeaEncipher;
 
-architecture Behavioral of Encipher is
+architecture Behavioral of XTeaEncipher is
     
     type MEMORY is array(0 to g_ROUNDS) of UNSIGNED(63 downto 0);
     signal matrix : MEMORY := (others => (others => '0'));
