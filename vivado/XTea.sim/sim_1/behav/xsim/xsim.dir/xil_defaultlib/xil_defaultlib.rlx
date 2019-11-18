@@ -2,7 +2,5 @@
 2019.1
 May 24 2019
 14:51:52
-/home/jacob/Workspace/vhdl/vhdlproj/src/encipher.vhd,1573944921,vhdl,,,,encipher,,,,,,,,
-/home/jacob/Workspace/vhdl/vhdlproj/src/encipher_tb.vhd,1573945026,vhdl,,,,enciphertb,,,,,,,,
-/home/jacob/Workspace/vhdl/vhdlproj/src/tea.vhd,1573947871,vhdl,,,,enciphertea,,,,,,,,
-/home/jacob/Workspace/vhdl/vhdlproj/src/tea_tb.vhd,1573947617,vhdl,,,,encipherteatb,,,,,,,,
+/home/jacob/Workspace/vhdl/vhdlproj/src/tea_encipher.vhd,1574117846,vhdl,,,,teaencipher,,,,,,,,
+/home/jacob/Workspace/vhdl/vhdlproj/src/tea_encipher_tb.vhd,1574102613,vhdl,,,,teaenciphertb,,,,,,,,
