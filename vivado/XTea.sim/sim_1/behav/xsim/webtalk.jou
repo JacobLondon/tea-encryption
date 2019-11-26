@@ -2,8 +2,8 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Nov 18 10:52:10 2019
-# Process ID: 11308
+# Start of session at: Mon Nov 25 11:11:06 2019
+# Process ID: 11649
 # Current directory: /home/jacob/Workspace/vhdl/vhdlproj/vivado/XTea.sim/sim_1/behav/xsim
 # Command line: wbtcv -mode batch -source /home/jacob/Workspace/vhdl/vhdlproj/vivado/XTea.sim/sim_1/behav/xsim/xsim.dir/TeaEncipherTb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/jacob/Workspace/vhdl/vhdlproj/vivado/XTea.sim/sim_1/behav/xsim/webtalk.log
