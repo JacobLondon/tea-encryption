@@ -1,0 +1,461 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 18 17:18:18 2019
+# Process ID: 10012
+# Current directory: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1
+# Command line: vivado.exe -log vga_initials_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_initials_top.tcl
+# Log file: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/vga_initials_top.vds
+# Journal file: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_initials_top.tcl -notrace
+Command: synth_design -top vga_initials_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19308 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 729.680 ; gain = 178.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:64]
+	Parameter strip_hpixels bound to: 800 - type: integer 
+	Parameter strip_vlines bound to: 512 - type: integer 
+	Parameter strip_hbp bound to: 144 - type: integer 
+	Parameter strip_hfp bound to: 784 - type: integer 
+	Parameter strip_vbp bound to: 31 - type: integer 
+	Parameter strip_vfp bound to: 511 - type: integer 
+	Parameter data_depth bound to: 5 - type: integer 
+	Parameter data_length bound to: 7 - type: integer 
+	Parameter mem_length bound to: 114 - type: integer 
+	Parameter key_length bound to: 226 - type: integer 
+	Parameter count_size_top bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/.Xil/Vivado-10012-DESKTOP-JFF60VT/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'CLK_GEN_PLL' of component 'clk_wiz_0' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/.Xil/Vivado-10012-DESKTOP-JFF60VT/realtime/clk_wiz_0_stub.vhdl:15]
+	Parameter count_size bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'counter_generic' declared at 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/counter_generic.vhd:36' bound to instance 'COUNT' of component 'counter_generic' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'counter_generic' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/counter_generic.vhd:43]
+	Parameter count_size bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_generic' (1#1) [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/counter_generic.vhd:43]
+	Parameter hpixels bound to: 800 - type: integer 
+	Parameter vlines bound to: 512 - type: integer 
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter hfp bound to: 784 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter vfp bound to: 511 - type: integer 
+INFO: [Synth 8-3491] module 'VGA_VHDL' declared at 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/VGA_VHDL.vhd:37' bound to instance 'VGA_DRIVER' of component 'VGA_VHDL' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'VGA_VHDL' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/VGA_VHDL.vhd:74]
+	Parameter H_SP bound to: 128 - type: integer 
+	Parameter H_BP bound to: 16 - type: integer 
+	Parameter H_FP bound to: 16 - type: integer 
+	Parameter H_Video bound to: 640 - type: integer 
+	Parameter hpixels bound to: 800 - type: integer 
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter hfp bound to: 784 - type: integer 
+	Parameter V_SP bound to: 2 - type: integer 
+	Parameter V_BP bound to: 29 - type: integer 
+	Parameter V_FP bound to: 10 - type: integer 
+	Parameter V_Video bound to: 480 - type: integer 
+	Parameter vlines bound to: 512 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter vfp bound to: 511 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'VGA_VHDL' (2#1) [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/VGA_VHDL.vhd:74]
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter W bound to: 114 - type: integer 
+	Parameter H bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'vga_initials' declared at 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:38' bound to instance 'INIT_in' of component 'vga_initials' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'vga_initials' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:55]
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter W bound to: 114 - type: integer 
+	Parameter H bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_initials' (3#1) [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:55]
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter W bound to: 226 - type: integer 
+	Parameter H bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'vga_initials' declared at 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:38' bound to instance 'INIT_key' of component 'vga_initials' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'vga_initials__parameterized1' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:55]
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter W bound to: 226 - type: integer 
+	Parameter H bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_initials__parameterized1' (3#1) [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:55]
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter W bound to: 114 - type: integer 
+	Parameter H bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'vga_initials' declared at 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:38' bound to instance 'INIT_out' of component 'vga_initials' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:227]
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DATA_SIZE bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 114 - type: integer 
+INFO: [Synth 8-3491] module 'PROM_IMG' declared at 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/PROM_IMG.vhd:38' bound to instance 'PROM_in' of component 'PROM_IMG' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'PROM_IMG' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/PROM_IMG.vhd:50]
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DATA_SIZE bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 114 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PROM_IMG' (4#1) [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/PROM_IMG.vhd:50]
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DATA_SIZE bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 226 - type: integer 
+INFO: [Synth 8-3491] module 'PROM_IMG' declared at 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/PROM_IMG.vhd:38' bound to instance 'PROM_key' of component 'PROM_IMG' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'PROM_IMG__parameterized1' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/PROM_IMG.vhd:50]
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DATA_SIZE bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 226 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PROM_IMG__parameterized1' (4#1) [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/PROM_IMG.vhd:50]
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DATA_SIZE bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 114 - type: integer 
+INFO: [Synth 8-3491] module 'PROM_IMG' declared at 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/PROM_IMG.vhd:38' bound to instance 'PROM_out' of component 'PROM_IMG' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:270]
+WARNING: [Synth 8-614] signal 'R1' is read in the process but is not in the sensitivity list [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:282]
+WARNING: [Synth 8-614] signal 'G1' is read in the process but is not in the sensitivity list [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:282]
+WARNING: [Synth 8-614] signal 'B1' is read in the process but is not in the sensitivity list [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:282]
+WARNING: [Synth 8-614] signal 'R2' is read in the process but is not in the sensitivity list [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:282]
+WARNING: [Synth 8-614] signal 'G2' is read in the process but is not in the sensitivity list [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:282]
+WARNING: [Synth 8-614] signal 'B2' is read in the process but is not in the sensitivity list [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:282]
+WARNING: [Synth 8-614] signal 'R3' is read in the process but is not in the sensitivity list [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:282]
+WARNING: [Synth 8-614] signal 'G3' is read in the process but is not in the sensitivity list [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:282]
+WARNING: [Synth 8-614] signal 'B3' is read in the process but is not in the sensitivity list [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:282]
+INFO: [Synth 8-256] done synthesizing module 'vga_initials_top' (5#1) [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials_top.vhd:64]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 795.094 ; gain = 243.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 797.004 ; gain = 245.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 797.004 ; gain = 245.645
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK_GEN_PLL'
+Finished Parsing XDC File [c:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK_GEN_PLL'
+Parsing XDC File [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/constrs_1/new/vga.xdc]
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/constrs_1/new/vga.xdc:317]
+WARNING: [Vivado 12-584] No ports matched 'green[3]'. [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/constrs_1/new/vga.xdc:327]
+WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/constrs_1/new/vga.xdc:337]
+Finished Parsing XDC File [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/constrs_1/new/vga.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/constrs_1/new/vga.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/vga_initials_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/constrs_1/new/vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_initials_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_initials_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 917.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 917.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 917.910 ; gain = 366.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 917.910 ; gain = 366.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for CLK_GEN_PLL. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 917.910 ; gain = 366.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'G_reg' into 'R_reg' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:96]
+INFO: [Synth 8-4471] merging register 'B_reg' into 'R_reg' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:97]
+INFO: [Synth 8-4471] merging register 'green_reg[2:0]' into 'red_reg[2:0]' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:90]
+INFO: [Synth 8-4471] merging register 'blue_reg[2:0]' into 'red_reg[2:0]' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:91]
+INFO: [Synth 8-4471] merging register 'G_reg' into 'R_reg' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:96]
+INFO: [Synth 8-4471] merging register 'B_reg' into 'R_reg' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:97]
+INFO: [Synth 8-4471] merging register 'green_reg[2:0]' into 'red_reg[2:0]' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:90]
+INFO: [Synth 8-4471] merging register 'blue_reg[2:0]' into 'red_reg[2:0]' [C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/vga_initials.vhd:91]
+INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 917.910 ; gain = 366.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'PROM_in' (PROM_IMG) to 'PROM_out'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 6     
+	   3 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 18    
++---Registers : 
+	               10 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   6 Input    224 Bit        Muxes := 1     
+	   6 Input    112 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	  16 Input      7 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter_generic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+Module VGA_VHDL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module vga_initials 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 5     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module vga_initials__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 5     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module PROM_IMG 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input    112 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 1     
+Module PROM_IMG__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input    224 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'INIT_out/red_reg[0]' (FDCE) to 'INIT_out/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INIT_key/red_reg[0]' (FDCE) to 'INIT_key/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'INIT_in/red_reg[0]' (FDCE) to 'INIT_in/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'INIT_out/red_reg[1]' (FDCE) to 'INIT_out/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INIT_key/red_reg[1]' (FDCE) to 'INIT_key/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INIT_in/red_reg[1]' (FDCE) to 'INIT_in/red_reg[2]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 917.910 ; gain = 366.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK_GEN_PLL/clk25' to pin 'CLK_GEN_PLL/bbstub_clk25/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 917.910 ; gain = 366.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 917.910 ; gain = 366.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 917.910 ; gain = 366.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 927.000 ; gain = 375.641
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 927.000 ; gain = 375.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 927.000 ; gain = 375.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 927.000 ; gain = 375.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 927.000 ; gain = 375.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 927.000 ; gain = 375.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |clk_wiz_0_bbox_0 |     1|
+|2     |BUFG             |     1|
+|3     |LUT1             |     3|
+|4     |LUT2             |    10|
+|5     |LUT3             |    11|
+|6     |LUT4             |    20|
+|7     |LUT5             |    19|
+|8     |LUT6             |    58|
+|9     |MUXF7            |     4|
+|10    |FDCE             |    38|
+|11    |FDPE             |     1|
+|12    |FDRE             |     3|
+|13    |IBUF             |     5|
+|14    |OBUF             |    11|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-------------+-----------------------------+------+
+|      |Instance     |Module                       |Cells |
++------+-------------+-----------------------------+------+
+|1     |top          |                             |   186|
+|2     |  COUNT      |counter_generic              |    26|
+|3     |  INIT_in    |vga_initials                 |     5|
+|4     |  INIT_key   |vga_initials__parameterized1 |     5|
+|5     |  INIT_out   |vga_initials_0               |     5|
+|6     |  VGA_DRIVER |VGA_VHDL                     |   125|
++------+-------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 927.000 ; gain = 375.641
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 927.000 ; gain = 254.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 927.000 ; gain = 375.641
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 935.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 935.844 ; gain = 635.805
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 935.844 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/vga_initials_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_initials_top_utilization_synth.rpt -pb vga_initials_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 17:19:03 2019...

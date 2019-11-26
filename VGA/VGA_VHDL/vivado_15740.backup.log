@@ -1,0 +1,340 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 16 11:21:51 2019
+# Process ID: 15740
+# Current directory: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13952 C:\Users\Aaron Zhang\Desktop\ECE4304\Project1\VGA_CH\VGA\VGA_VHDL\VGA_VHDL.xpr
+# Log file: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/vivado.log
+# Journal file: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.xpr}
+WARNING: [Board 49-91] Board repository path 'C:/Users/Aaron' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Zhang/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Aaron' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Aaron' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Zhang/AppData/Roaming/Xilinx/Vivado/Zhang/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Aaron' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Zhang/AppData/Roaming/Xilinx/Vivado/Zhang/AppData/Roaming/Xilinx/Vivado/Zhang/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Aaron' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Zhang/AppData/Roaming/Xilinx/Vivado/Zhang/AppData/Roaming/Xilinx/Vivado/Zhang/AppData/Roaming/Xilinx/Vivado/{C:/Users/Aaron' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Aaron' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Zhang/AppData/Roaming/Xilinx/Vivado/Zhang/AppData/Roaming/Xilinx/Vivado/Zhang/AppData/Roaming/Xilinx/Vivado/Zhang/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}' does not exist, it will not be used to search board files.
+INFO: [Project 1-313] Project file moved from '/home/mealy/VGA/VGA_VHDL' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 747.520 ; gain = 115.484
+update_compile_order -fileset sources_1
+set_property top vga_initials_top [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 11:42:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 11:42:45 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 11:44:44 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 11:44:44 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 11:45:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 11:45:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 11:46:25 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 11:46:25 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 11:47:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 11:47:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 815.957 ; gain = 3.059
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF252A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292ABF252A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 11:53:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 11:53:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 11:57:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 11:57:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 12:11:14 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 12:11:14 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 12:28:01 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 12:28:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 12:55:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 12:55:17 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+reset_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'reset_runs' was cancelled
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 12:57:16 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 12:57:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1995.801 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF252A
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 13:45:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 13:45:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1996.391 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF252A
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 13:52:44 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 13:52:44 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 15:11:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 15:11:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 15:17:03 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 15:17:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 15:19:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 15:19:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 15:30:47 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 15:30:47 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292ABF252A
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 15:48:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 15:48:36 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF252A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292ABF252A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close [ open {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/counter_generic.vhd} w ]
+add_files {{C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.srcs/sources_1/new/counter_generic.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 16:04:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 16:04:52 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF252A
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 16:08:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 16:08:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/vga_initials_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 16:10:55 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/synth_1/runme.log
+[Sat Nov 16 16:10:55 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Aaron Zhang/Desktop/ECE4304/Project1/VGA_CH/VGA/VGA_VHDL/VGA_VHDL.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292ABF252A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 17 14:34:42 2019...
