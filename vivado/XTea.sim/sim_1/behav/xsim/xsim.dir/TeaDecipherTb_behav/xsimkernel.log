@@ -2,3 +2,6 @@ Running: xsim.dir/TeaDecipherTb_behav/xsimk -simmode gui -wdb TeaDecipherTb_beha
 Design successfully loaded
 Design Loading Memory Usage: 33356 KB (Peak: 33476 KB)
 Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 123292 KB (Peak: 172624 KB)
+Simulation CPU Usage: 70 ms
