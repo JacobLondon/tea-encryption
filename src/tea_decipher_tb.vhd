@@ -1,67 +1,71 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 11/16/2019 12:25:26 PM
--- Design Name: 
--- Module Name: decipher_TB - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_1164.ALL; 
 use IEEE.NUMERIC_STD.ALL;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+entity TeaDecipherTb is
+    --Port()
+end TeaDecipherTb; 
 
-entity TeaDecipherTB is
-Generic(num_round : integer:= 64);
---  Port ( );
-end TeaDecipherTB;
+architecture Behavioral of TeaDecipherTb is
 
-architecture Behavioral of TeaDecipherTB is
-component TeaDecipher is
-    Generic(num_round: integer:= 1); 
-    Port ( input_data : in unsigned (63 downto 0);
-           key : in unsigned (127 downto 0);
-           output : out unsigned (63 downto 0)
-           );
-end component;
-signal input_data: unsigned( 63 downto 0);
-signal key: unsigned(127 downto 0);
-signal output: unsigned(63 downto 0);
-constant period: time:= 4ns;
+    component TeaDecipher
+        Port (
+            clk         : in  STD_LOGIC;
+            rst         : in  STD_LOGIC;
+            num_rounds  : in  UNSIGNED(7 downto 0);
+            input_data  : in  UNSIGNED(63 downto 0);
+            key         : in  UNSIGNED(127 downto 0);
+            output_data : out UNSIGNED(63 downto 0);
+            done        : out STD_LOGIC
+        );
+    end component;    
+    
+    constant jump : time := 10 ns;
+    signal clk, rst, done : STD_LOGIC;
+    
+    signal num_rounds : UNSIGNED(7 downto 0);
+
+    signal din, dout : UNSIGNED(63 downto 0);
+    signal key       : UNSIGNED(127 downto 0);
+    
 begin
-decipher_gen: TeaDecipher generic map(num_round => num_round)
-                       port map(
-                                    input_data => input_data,
-                                    key => key,
-                                    output => output
-                                );
-SIM_ENV:process
-        begin
-        --input_data     <= x"e59368e1122ddb1b";
-        input_data       <= x"0c95aba3df6f6f9a";
-        key <= x"feedbeef00c0ffeef00000110facade0";
-        wait for period;
-        end process;
+    
+    CLKGEN: process
+    begin
+        clk <= '1';
+        wait for jump;
+        clk <= '0';
+        wait for jump;
+    end process;
+    
+    UUT: TeaDecipher
+        port map (
+            clk         => clk,
+            rst         => rst,
+            num_rounds  => num_rounds,
+            input_data  => din,
+            key         => key,
+            output_data => dout,
+            done        => done
+        );
         
+    TESTBENCH: process
+    begin
+        din <= x"e59368e1122ddb1b";
+        key <= x"FEEDBEEF00C0FFEEF00000110FACADE0";
+        num_rounds <= x"40";
+        
+        rst <= '1';
+        wait for jump;
+        rst <= '0';
+        wait for jump;
+        
+        while done = '0' loop
+            wait for jump;
+        end loop;
+        
+        wait;
+    
+    end process;
 
 end Behavioral;

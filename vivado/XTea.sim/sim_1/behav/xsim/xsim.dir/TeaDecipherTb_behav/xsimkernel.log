@@ -1,0 +1,4 @@
+Running: xsim.dir/TeaDecipherTb_behav/xsimk -simmode gui -wdb TeaDecipherTb_behav.wdb -simrunnum 0 -socket 48151
+Design successfully loaded
+Design Loading Memory Usage: 33356 KB (Peak: 33476 KB)
+Design Loading CPU Usage: 20 ms

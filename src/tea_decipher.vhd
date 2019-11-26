@@ -1,75 +1,170 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 11/16/2019 03:06:41 PM
--- Design Name: 
--- Module Name: tea_decipher - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_1164.ALL; 
 use IEEE.NUMERIC_STD.ALL;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use IEEE.MATH_REAL.ALL;
 
 entity TeaDecipher is
-    Generic(num_round: integer:= 64); 
-    Port ( input_data : in UNSIGNED (63 downto 0);
-           key : in UNSIGNED (127 downto 0);
-           output : out UNSIGNED (63 downto 0));
+    Port (
+        clk         : in  STD_LOGIC;
+        rst         : in  STD_LOGIC;
+        num_rounds  : in  UNSIGNED(7 downto 0);
+        input_data  : in  UNSIGNED(63 downto 0);
+        key         : in  UNSIGNED(127 downto 0);
+        output_data : out UNSIGNED(63 downto 0);
+        done        : out STD_LOGIC
+    );
 end TeaDecipher;
 
 architecture Behavioral of TeaDecipher is
-type mem_sum is array (0 to num_round) of unsigned(31 downto 0);
-type memory is array (0 to num_round) of unsigned (63 downto 0);
-signal matrix: memory := (others=>(others  => '0'));
-signal sum: mem_sum := (others =>(others => '0'));
-signal DELTA: UNSIGNED(31 downto 0);
-signal v0, v1, v0_tmp, v1_tmp, tmp1, tmp2, tmp3 ,tmp4,tmp5,tmp6 :mem_sum;
-signal tmp_sum: unsigned(63 downto 0);
-signal k0, k1, k2, k3: unsigned(31 downto 0);
+    
+    signal delta : UNSIGNED(31 downto 0);
+    signal k0, k1, k2, k3 : UNSIGNED(31 downto 0);
+    signal v0, v1, next_v0, next_v1, t1, t2, t3, t4,t5, t6, t7, t8, t9, t10, t11, t12, t13, t14 : UNSIGNED(31 downto 0);
+    signal sum, next_sum : UNSIGNED(31 downto 0);
+    
+    signal round, next_round: UNSIGNED(7 downto 0);
+    type STATE_TYPE is (s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24);
+    signal curr_state, next_state : STATE_TYPE;
+    
+    signal max_rounds : UNSIGNED(63 downto 0);
+
 begin
-matrix(0) <= input_data;
-output <= matrix(num_round);
-Delta <=  x"9E3779B9";
-tmp_sum <= x"9E3779B9" * num_round;
-sum(0) <= tmp_sum(31 downto 0);
-k0 <= key(31 downto 0);
-k1 <= key(63 downto 32);
-k2 <= key(95 downto 64);
-k3 <= key(127 downto 96);
-Round: for i in 0 to num_round - 1 generate
-       begin
-           v0(i) <= (matrix(i)(31 downto 0));
-           v1(i) <= (matrix(i)(63 downto 32));
-           
-         --v1        =  v1    - ((v0     <<       4) + k2   ^   (v0    + sum   )  ^  (v0     >>         5) + k3 );
-           v1_tmp(i) <= v1(i) - ((shift_left(v0(i),4) + k2) xor (v0(i) + sum(i)) xor (shift_right(v0(i),5) + k3));
-         --v0        =  v1    - ((v1     <<       4) + k2   ^   (v1    + sum   )  ^  (v1     >>         5) + k3 );  
-           v0_tmp(i) <= v0(i) - ((shift_left(v1_tmp(i),4) + k0) xor (v1_tmp(i) + sum(i)) xor (shift_right(v1_tmp(i),5) + k1));
-           
-           sum(i+1) <= sum(i) - Delta;
-           matrix(i+1) <= v1_tmp(i) & v0_tmp(i);
-               
-end generate;
+
+    delta <= x"9E3779B9";
+    
+    k3 <= key(31 downto 0);
+    k2 <= key(63 downto 32);
+    k1 <= key(95 downto 64);
+    k0 <= key(127 downto 96);
+    
+    max_rounds <= delta * (x"000000" & num_rounds);
+    
+    CONTINUE: process (clk)
+    begin
+        if rising_edge(clk) then
+            if rst = '1' then
+                curr_state <= s0;
+            else
+                curr_state <= next_state;
+            end if;
+        end if;
+    end process;
+    
+    ENCIPHER_MACHINE: process (clk)
+    begin
+        case curr_state is
+            -- reset all variables
+            when s0 => 
+                done   <= '0';
+                sum    <= max_rounds(31 downto 0);
+                next_sum <= (others => '0');
+                round  <= (others => '0');
+                next_round <= (others => '0');
+                t1     <= (others => '0');
+                t2     <= (others => '0');
+                t3     <= (others => '0');
+                t4     <= (others => '0');
+                t5     <= (others => '0');
+                t6     <= (others => '0');
+                t7     <= (others => '0');
+                t8     <= (others => '0');
+                t9     <= (others => '0');
+                t10    <= (others => '0');
+                t11    <= (others => '0');
+                t12    <= (others => '0');
+                t13    <= (others => '0');
+                t14    <= (others => '0');
+                v1     <= input_data(31 downto 0);
+                v0     <= input_data(63 downto 32);
+                next_v0 <= (others => '0');
+                next_v1 <= (others => '0');
+                next_state <= s1;
+            when s1 => 
+                t1 <= v0 sll 4;
+                next_state <= s2;
+            when s2 => 
+                t2 <= t1 + k2;
+                next_state <= s3;
+            when s3 => 
+                t3 <= v0 + sum;
+                next_state <= s4;
+            when s4 => 
+                t4 <= v0 srl 5;
+                next_state <= s5;
+            when s5 => 
+                t5 <= t4 + k3;
+                next_state <= s6;
+            when s6 => 
+                t6 <= t2 xor t3;
+                next_state <= s7;
+            when s7 => 
+                t7 <= t5 xor t6;
+                next_state <= s8;
+            when s8 => 
+                next_v1 <= v1 - t7;
+                next_state <= s9;
+            when s9 => 
+                v1 <= next_v1;
+                next_state <= s10;
+            
+            when s10 => 
+                t8 <= v1 sll 4;
+                next_state <= s11;
+            when s11 => 
+                t9 <= t8 + k0;
+                next_state <= s12;
+            when s12 => 
+                t10 <= v1 + sum;
+                next_state <= s13;
+            when s13 => 
+                t11 <= v1 srl 5;
+                next_state <= s14;
+            when s14 => 
+                t12 <= t11 + k1;
+                next_state <= s15;
+            when s15 => 
+                t13 <= t9 xor t10;
+                next_state <= s16;
+            when s16 => 
+                t14 <= t12 xor t13;
+                next_state <= s17;
+            when s17 => 
+                next_v0 <= v0 - t14;
+                next_state <= s18;
+            when s18 => 
+                v0 <= next_v0;
+                next_state <= s19;
+            
+            when s19 => 
+                next_sum <= sum - delta;
+                next_state <= s20;
+            when s20 => 
+                sum <= next_sum;
+                next_state <= s21;
+                
+            when s21 => 
+                next_round <= round + 1;
+                next_state <= s22;
+            when s22 => 
+                round <= next_round;
+                next_state <= s23;
+            when s23 => 
+                if round = num_rounds then
+                    next_state <= s24;
+                else
+                    next_state <= s1;
+                end if;
+            when s24 => 
+                output_data <= v0 & v1;
+                done <= '1';
+                if rst = '1' then
+                    next_state <= s0;
+                else
+                    next_state <= s24;
+                end if;
+            when others => 
+                next_state <= s0;
+        end case;
+    end process;
 
 end Behavioral;

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../src/tea_encipher.vhd" \
+"../../../../../src/tea_decipher.vhd" \
+"../../../../../src/xtea_decipher.vhd" \
+"../../../../../src/xtea_encipher.vhd" \
+"../../../../../src/tea_encipher_tb.vhd" \
+"../../../../../src/tea_decipher_tb.vhd" \
+"../../../../../src/xtea_decipher_tb.vhd" \
+"../../../../../src/xtea_encipher_tb.vhd" \
+
+# Do not sort compile order
+nosort
