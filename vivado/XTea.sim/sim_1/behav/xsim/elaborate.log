@@ -1,7 +1,17 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: /tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 522f16a0325943acb3243db213d221ad --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot TeaEncipherTb_behav xil_defaultlib.TeaEncipherTb -log elaborate.log 
-Using 8 slave threads.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 522f16a0325943acb3243db213d221ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TeaEncipherTb_behav xil_defaultlib.TeaEncipherTb -log elaborate.log 
+Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.TeaEncipher [teaencipher_default]
+Compiling architecture behavioral of entity xil_defaultlib.teaenciphertb
+Built simulation snapshot TeaEncipherTb_behav

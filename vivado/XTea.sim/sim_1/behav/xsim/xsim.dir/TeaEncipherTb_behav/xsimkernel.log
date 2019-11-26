@@ -1,7 +1,0 @@
-Running: xsim.dir/TeaEncipherTb_behav/xsimk -simmode gui -wdb TeaEncipherTb_behav.wdb -simrunnum 0 -socket 37771
-Design successfully loaded
-Design Loading Memory Usage: 33348 KB (Peak: 33468 KB)
-Design Loading CPU Usage: 20 ms
-Simulation completed
-Simulation Memory Usage: 115084 KB (Peak: 172616 KB)
-Simulation CPU Usage: 740 ms
