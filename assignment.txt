@@ -1,0 +1,53 @@
+________________________________________________________
+VHDL Project
+Create a GitHub repo for the professor. Each section to be
+created and put onto the GitHub repo which the professor will
+link to you.
+
+________________________________________________________
+Write the report in double-column, IEEE format
+Paper Header
+    - Name RECO-T (reconfigurable, T=type of computation)
+        - ie. RECO-ENC => reconfigurable encryption
+    - Names: name0, name1, name2, ... , Mohamed El-Hadedy
+    - Email: {email0, email1, email2, ... , mealy@cpp.edu}
+Paper Introduction
+    - Abstract ~200 to 250 words
+    - Ensure keywords:
+        - FPGA; LWC; VHDL; ...
+    - Sections
+        1. Introduction
+        2. Body0
+        3. Body1
+        4. Body2
+        5. Conclusions
+
+________________________________________________________
+Put Slides into the package
+    Slide 0 - Introduction
+    Slide 1 - Motivation for the work
+    Slide 2 - Innovation in your work
+    Slide 3 - Conclusion and evaluation
+    Slide 4 - Ending slides
+
+________________________________________________________
+Create poster
+    - Describe the entire project in a single image
+    - PDF format
+
+________________________________________________________
+Put the project on the GitHub which the professor will link.
+Project Format file tree for GitHub:
+    - doc/
+        - Paper.pdf
+        - Poster.pdf
+        - PowerPoint.pptx
+    - src/
+        - software/
+        - hardware/
+        (state clearly you are using Xilinx)
+    - README.md
+        - Write how to run and use your program in markdown format
+          for fancy text formatting on the GitHub page.
+________________________________________________________
+
