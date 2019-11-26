@@ -39,13 +39,12 @@ ________________________________________________________
 Put the project on the GitHub which the professor will link.
 Project Format file tree for GitHub:
     - doc/
-        - Paper.pdf
+        - IEEE_Paper.pdf
         - Poster.pdf
         - PowerPoint.pptx
     - src/
         - software/
         - hardware/
-        (state clearly you are using Xilinx)
     - README.md
         - Write how to run and use your program in markdown format
           for fancy text formatting on the GitHub page.
