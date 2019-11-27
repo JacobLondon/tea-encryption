@@ -21,9 +21,6 @@ entity vga_initials_top is
     Port ( clk  : in STD_LOGIC;
            rst  : in STD_LOGIC;
            index: in STD_LOGIC_VECTOR (3 downto 0);
-           enciphered_data : in UNSIGNED(63 downto 0);
-           deciphered_data : in UNSIGNED(63 downto 0);
-           key             : out UNSIGNED(127 downto 0);
            --index: in STD_LOGIC_VECTOR (4*mem_length/7 - 1 downto 0);
            --sw   : in STD_LOGIC_VECTOR (7 downto 0);
            hsync: out STD_LOGIC;

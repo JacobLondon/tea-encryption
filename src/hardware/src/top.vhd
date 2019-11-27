@@ -49,6 +49,21 @@ architecture Behavioral of TeaTop is
         );
     end component;
 
+    component VGATop
+        Port (
+            clk : in STD_LOGIC;
+            rst : in STD_LOGIC;
+            enciphered_data : in UNSIGNED(63 downto 0);
+            deciphered_data : in UNSIGNED(63 downto 0);
+            key             : in UNSIGNED(127 downto 0);
+            hsync : out STD_LOGIC;
+            vsync : out STD_LOGIC;
+            red   : out STD_LOGIC_VECTOR (2 downto 0);
+            green : out STD_LOGIC_VECTOR (2 downto 0);
+            blue  : out STD_LOGIC_VECTOR (2 downto 0)
+        );
+    end component;
+
     signal num_rounds : UNSIGNED(7 downto 0);
 
     signal encipher_input, encipher_output, decipher_output : UNSIGNED(63 downto 0);
@@ -79,6 +94,20 @@ begin
             key => key,
             output_data => decipher_output,
             done => decipher_done
+        );
+
+    VGA_CONTROL: VGATop
+        port map (
+            clk => clk,
+            rst => '0',
+            enciphered_data => encipher_input,
+            deciphered_data => decipher_output,
+            key => key,
+            hsync => hsync,
+            vsync => vsync,
+            red => red,
+            green => green,
+            blue => blue
         );
 
 end Behavioral;
