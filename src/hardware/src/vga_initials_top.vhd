@@ -20,8 +20,10 @@ entity vga_initials_top is
          );
     Port ( clk  : in STD_LOGIC;
            rst  : in STD_LOGIC;
-           index: in STD_LOGIC_VECTOR (3 downto 0);
-           --index: in STD_LOGIC_VECTOR (4*mem_length/7 - 1 downto 0);
+           --index: in STD_LOGIC_VECTOR (3 downto 0);
+           enciphered_data: in STD_LOGIC_VECTOR (4*(mem_length-2)/7 - 1 downto 0);
+		   deciphered_data : in STD_LOGIC_VECTOR(4*(mem_length-2)/7 - 1 downto 0);
+		   key             : in STD_LOGIC_VECTOR(4*(key_length-2)/7 - 1 downto 0);
            --sw   : in STD_LOGIC_VECTOR (7 downto 0);
            hsync: out STD_LOGIC;
            vsync: out STD_LOGIC; 
@@ -73,8 +75,8 @@ component PROM_IMG
             DATA_SIZE:positive:= 7;
             MEM_SIZE :positive:= 114
            );
-    Port   ( --index   : in  STD_LOGIC_VECTOR(4*MEM_SIZE/7 -1 downto 0);
-             index   : in  STD_LOGIC_VECTOR(3 downto 0);
+    Port   ( index   : in  STD_LOGIC_VECTOR(4*(MEM_SIZE-2)/7 -1 downto 0);
+             --index   : in  STD_LOGIC_VECTOR(3 downto 0);
              addr    : in  STD_LOGIC_VECTOR (integer(ceil(log2(real(DEPTH))))-1 downto 0);
              PROM_OP : out STD_LOGIC_VECTOR (MEM_SIZE-1 downto 0)
            );
@@ -221,7 +223,7 @@ PROM_in: PROM_IMG generic map (
                             MEM_SIZE  => mem_length
                             )
                port map (
-                          index   => index,
+                          index   => enciphered_data,
                           addr    => rom_addr4,
                           PROM_OP => IMG_in
                         );
@@ -232,7 +234,7 @@ PROM_key: PROM_IMG generic map (
                             MEM_SIZE  => key_length
                             )
                port map (
-                          index   => index,
+                          index   => key,
                           addr    => rom_addr4,
                           PROM_OP => IMG_key
                         );  
@@ -243,7 +245,7 @@ PROM_out: PROM_IMG generic map (
                             MEM_SIZE  => mem_length
                             )
                port map (
-                          index   => index,
+                          index   => deciphered_data,
                           addr    => rom_addr4,
                           PROM_OP => IMG_out
                         );  

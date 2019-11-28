@@ -1,0 +1,128 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Nov 27 18:56:08 2019
+| Host         : cygnus running 64-bit Ubuntu 19.04
+| Command      : report_control_sets -verbose -file TeaTop_control_sets_placed.rpt
+| Design       : TeaTop
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    50 |
+|    Minimum number of control sets                        |    50 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    82 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    50 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    44 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1411 |          474 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              34 |           15 |
+| Yes          | No                    | No                     |               9 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+----------------------------------------------+------------------+------------------+----------------+
+|                Clock Signal               |                 Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-------------------------------------------+----------------------------------------------+------------------+------------------+----------------+
+|  ENCIPHERER/next_round_reg[7]_i_2_n_11    |                                              |                  |                2 |              8 |
+|  DECIPHERER/next_round_reg[7]_i_2__0_n_11 |                                              |                  |                3 |              8 |
+|  ENCIPHERER/round_reg[7]_i_2_n_11         |                                              |                  |                3 |              8 |
+|  DECIPHERER/round_reg[7]_i_2__0_n_11      |                                              |                  |                3 |              8 |
+|  VGA_CONTROL/hc_reg[9]_i_2_n_11           | VGA_CONTROL/VGA_INITIALS/VGA_DRIVER/vsenable |                  |                4 |              9 |
+|  clk_IBUF                                 |                                              |                  |                3 |             10 |
+|  VGA_CONTROL/hc_reg[9]_i_2_n_11           |                                              |                  |               10 |             23 |
+|  ENCIPHERER/t4_reg[26]_i_2_n_11           |                                              |                  |                9 |             27 |
+|  ENCIPHERER/t11_reg[26]_i_2_n_11          |                                              |                  |                8 |             27 |
+|  DECIPHERER/t11_reg[26]_i_2__0_n_11       |                                              |                  |               10 |             27 |
+|  DECIPHERER/t4_reg[26]_i_2__0_n_11        |                                              |                  |                9 |             27 |
+|  DECIPHERER/t12_reg[27]_i_2_n_11          |                                              |                  |               10 |             28 |
+|  DECIPHERER/t8_reg[31]_i_1_n_11           |                                              |                  |               11 |             28 |
+|  ENCIPHERER/t8_reg[31]_i_2_n_11           |                                              |                  |                8 |             28 |
+|  DECIPHERER/t1_reg[31]_i_2__0_n_11        |                                              |                  |               11 |             28 |
+|  ENCIPHERER/t5_reg[27]_i_2_n_11           |                                              |                  |                8 |             28 |
+|  ENCIPHERER/t1_reg[31]_i_2_n_11           |                                              |                  |               12 |             28 |
+|  ENCIPHERER/t12_reg[28]_i_2_n_11          |                                              |                  |                9 |             29 |
+|  ENCIPHERER/t9_reg[31]_i_2_n_11           |                                              |                  |                9 |             29 |
+|  ENCIPHERER/t2_reg[31]_i_2_n_11           |                                              |                  |                9 |             29 |
+|  DECIPHERER/t5_reg[28]_i_2_n_11           |                                              |                  |                9 |             29 |
+|  DECIPHERER/t2_reg[31]_i_2__0_n_11        |                                              |                  |               11 |             29 |
+|  DECIPHERER/t9_reg[31]_i_2__0_n_11        |                                              |                  |               10 |             29 |
+|  DECIPHERER/t7_reg[31]_i_2_n_11           |                                              |                  |                9 |             32 |
+|  DECIPHERER/t6_reg[31]_i_2_n_11           |                                              |                  |               12 |             32 |
+|  DECIPHERER/v0_reg[31]_i_2_n_11           |                                              |                  |               11 |             32 |
+|  DECIPHERER/v1_reg[31]_i_2__0_n_11        |                                              |                  |                8 |             32 |
+|  ENCIPHERER/next_sum_reg[31]_i_2_n_11     |                                              |                  |               10 |             32 |
+|  DECIPHERER/next_v0_reg[31]_i_2_n_11      |                                              |                  |                9 |             32 |
+|  ENCIPHERER/v1_reg[31]_i_2_n_11           |                                              |                  |               10 |             32 |
+|  DECIPHERER/t10_reg[31]_i_2_n_11          |                                              |                  |               13 |             32 |
+|  n_9_438_BUFG                             |                                              |                  |               11 |             32 |
+|  n_8_447_BUFG                             |                                              |                  |                9 |             32 |
+|  n_7_434_BUFG                             |                                              |                  |               12 |             32 |
+|  n_6_431_BUFG                             |                                              |                  |               11 |             32 |
+|  n_5_426_BUFG                             |                                              |                  |               10 |             32 |
+|  n_4_427_BUFG                             |                                              |                  |               10 |             32 |
+|  n_3_437_BUFG                             |                                              |                  |               11 |             32 |
+|  n_2_430_BUFG                             |                                              |                  |               13 |             32 |
+|  n_1_428_BUFG                             |                                              |                  |               12 |             32 |
+|  n_10_441_BUFG                            |                                              |                  |               11 |             32 |
+|  DECIPHERER/t14_reg[31]_i_2_n_11          |                                              |                  |               12 |             32 |
+|  DECIPHERER/t13_reg[31]_i_2_n_11          |                                              |                  |                9 |             32 |
+|  DECIPHERER/t3_reg[31]_i_2_n_11           |                                              |                  |               11 |             32 |
+|  DECIPHERER/sum_reg[31]_i_2_n_11          |                                              |                  |               10 |             32 |
+|  DECIPHERER/next_v1_reg[31]_i_2_n_11      |                                              |                  |                9 |             32 |
+|  DECIPHERER/next_sum_reg[31]_i_2__0_n_11  |                                              |                  |                9 |             32 |
+|  clk_IBUF                                 |                                              | rst_IBUF         |               15 |             34 |
+|  output_data_reg[63]_i_1_n_11             |                                              |                  |               18 |             64 |
+|  n_0_630_BUFG                             |                                              |                  |               27 |             64 |
++-------------------------------------------+----------------------------------------------+------------------+------------------+----------------+
+
+

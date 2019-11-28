@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/jacob/Workspace/vhdl/vhdlproj/vivado/XTea.runs/clk_wiz_0_synth_1'
+HD_PWD='/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/clk_wiz_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

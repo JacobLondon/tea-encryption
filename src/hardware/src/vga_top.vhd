@@ -37,7 +37,9 @@ architecture Behavioral of VGATop is
         Port (
             clk  : in STD_LOGIC;
             rst  : in STD_LOGIC;
-            index: in STD_LOGIC_VECTOR (3 downto 0);
+            enciphered_data : in STD_LOGIC_VECTOR (63 downto 0);
+		    deciphered_data : in STD_LOGIC_VECTOR(63 downto 0);
+		    key             : in STD_LOGIC_VECTOR(127 downto 0);
             hsync: out STD_LOGIC;
             vsync: out STD_LOGIC; 
             red  : out STD_LOGIC_VECTOR (2 downto 0); 
@@ -46,7 +48,7 @@ architecture Behavioral of VGATop is
         );
     end component;
 
-    signal index : STD_LOGIC_VECTOR(3 downto 0);
+    --signal index : STD_LOGIC_VECTOR(3 downto 0);
 
 begin
 
@@ -54,7 +56,9 @@ begin
         port map (
             clk => clk,
             rst => rst,
-            index => index,
+            enciphered_data => std_logic_vector(enciphered_data),
+			deciphered_data => std_logic_vector(deciphered_data),
+			key => std_logic_vector(key),
             hsync => hsync,
             vsync => vsync,
             red => red,

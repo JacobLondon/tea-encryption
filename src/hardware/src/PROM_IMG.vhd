@@ -10,8 +10,8 @@ entity PROM_IMG is
             DATA_SIZE:positive:= 7;
             MEM_SIZE :positive:= 114
            );
-    Port   ( --index   : in  STD_LOGIC_VECTOR(4*MEM_SIZE/7 -1 downto 0);
-             index   : in  STD_LOGIC_VECTOR(3 downto 0);
+    Port   ( index   : in  STD_LOGIC_VECTOR(4*(MEM_SIZE-2)/7 -1 downto 0);
+             --index   : in  STD_LOGIC_VECTOR(3 downto 0);
              addr    : in  STD_LOGIC_VECTOR (integer(ceil(log2(real(DEPTH))))-1 downto 0);
              PROM_OP : out STD_LOGIC_VECTOR (MEM_SIZE-1 downto 0)
            );
@@ -34,13 +34,13 @@ signal mem: mem_type:= (
                         ); 
 
 begin
---tmp_loop:for i in 0 to ((MEM_SIZE-2)/7) - 1 generate
---    tmp(7*i+6 downto 7*i) <=mem(conv_integer(addr))(((conv_integer(index(4*i+3 downto 4*i))+1)*7 -1) downto (conv_integer(index(4*i+3 downto 4*i))*7));
---end generate tmp_loop;
-
 tmp_loop:for i in 0 to ((MEM_SIZE-2)/7) - 1 generate
-    tmp(7*i+6 downto 7*i) <=mem(conv_integer(addr))(((conv_integer(index(3 downto 0))+1)*7 -1) downto (conv_integer(index(3 downto 0))*7));
+    tmp(7*i+6 downto 7*i) <=mem(conv_integer(addr))(((conv_integer(index(4*i+3 downto 4*i))+1)*7 -1) downto (conv_integer(index(4*i+3 downto 4*i))*7));
 end generate tmp_loop;
+
+--tmp_loop:for i in 0 to ((MEM_SIZE-2)/7) - 1 generate
+--    tmp(7*i+6 downto 7*i) <=mem(conv_integer(addr))(((conv_integer(index(3 downto 0))+1)*7 -1) downto (conv_integer(index(3 downto 0))*7));
+--end generate tmp_loop;
 
 --tmp15 <= mem(conv_integer(addr))(((conv_integer(index(63 downto 60))+1)*7 -1) downto (conv_integer(index(63 downto 60))*7)); 
 --tmp14 <= mem(conv_integer(addr))(((conv_integer(index(59 downto 56))+1)*7 -1) downto (conv_integer(index(59 downto 56))*7)); 

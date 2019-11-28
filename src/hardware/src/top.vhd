@@ -69,10 +69,17 @@ architecture Behavioral of TeaTop is
     signal encipher_input, encipher_output, decipher_output : UNSIGNED(63 downto 0);
     signal key : UNSIGNED(127 downto 0);
     signal encipher_done, decipher_done : STD_LOGIC;
+    
+    signal garbage : STD_LOGIC_VECTOR(7 downto 0);
 
 begin
 
+    key <= x"FEEDBEEF00C0FFEEF00000110FACADE0";
+    encipher_input <= x"DEADBEEFFEEBDAED";
+    
+
     num_rounds <= UNSIGNED(switches(7 downto 0));
+    garbage <= switches(15 downto 8);
     
     ENCIPHERER: TeaEncipher
         port map (
