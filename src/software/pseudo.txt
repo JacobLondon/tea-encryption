@@ -1,56 +1,48 @@
 
 algorithm tea-encipher is
-    input: Number of rounds N,
-           A 64-bit data V,
-           A 128-bit key K
-    output: A 64-bit enciphered data R
+  input: Number of rounds N,
+         A 64-bit data V,
+         A 128-bit key K
+  output: A 64-bit enciphered data R
 
-    let D be the key schedule constant
-    D ← 2^32/ϕ = 0x9E3779B9
+  let D be the key schedule constant
+  D ← 2^32/ϕ = 0x9E3779B9
+  let S be the current schedule
+  S ← 0
+  let K_f[4] be the cached key
+  K_f(0) ← bit range 0 to 31 in K
+  K_f(1) ← bit range 32 to 63 in K
+  K_f(2) ← bit range 64 to 95 in K
+  K_f(3) ← bit range 96 to 127 in K
 
-    let S be the current schedule
-    S ← 0
-
-    let K_f[4] be the cached key
-    K_f(0) ← bit range 0 to 31 in K
-    K_f(1) ← bit range 32 to 63 in K
-    K_f(2) ← bit range 64 to 95 in K
-    K_f(3) ← bit range 96 to 127 in K
-
-    for each round (R) in N do
-        S ← S + D
-        V(0) ← V(0) + (sll{V(1), 4} + K_f(0)) xor (V(1) + S) xor ((srl{V(1), 5}) + K_f(1))
-        V(1) ← V(1) + (sll{V(0), 4} + K_f(2)) xor (V(0) + S) xor ((srl{V(0), 5}) + K_f(3))
-
-    R(0) ← V(0)
-    R(1) ← V(1)
-
-    return R
+  for each round (R) in N do
+    S ← S + D
+    V(0) ← V(0) + (sll{V(1), 4} + K_f(0)) xor (V(1) + S) xor ((srl{V(1), 5}) + K_f(1))
+    V(1) ← V(1) + (sll{V(0), 4} + K_f(2)) xor (V(0) + S) xor ((srl{V(0), 5}) + K_f(3))
+  R(0) ← V(0)
+  R(1) ← V(1)
+  return R
 
 algorithm tea-decipher is
-    input: Number of rounds N,
-           A 64-bit data V,
-           A 128-bit key K
-    output: A 64-bit deciphered data R
+  input: Number of rounds N,
+         A 64-bit data V,
+         A 128-bit key K
+  output: A 64-bit deciphered data R
 
-    let D be the key schedule constant
-    D ← 2^32/ϕ = 0x9E3779B9
+  let D be the key schedule constant
+  D ← 2^32/ϕ = 0x9E3779B9
+  let S be the current schedule
+  S ← 0
+  let K_f[4] be the cached key
+  K_f(0) ← bit range 0 to 31 in K
+  K_f(1) ← bit range 32 to 63 in K
+  K_f(2) ← bit range 64 to 95 in K
+  K_f(3) ← bit range 96 to 127 in K
 
-    let S be the current schedule
-    S ← 0
-
-    let K_f[4] be the cached key
-    K_f(0) ← bit range 0 to 31 in K
-    K_f(1) ← bit range 32 to 63 in K
-    K_f(2) ← bit range 64 to 95 in K
-    K_f(3) ← bit range 96 to 127 in K
-
-    for each round (R) in N do
-        V(1) ← V(1) - (sll{V(0), 4} + K_f(2)) xor (V(0) + S) xor ((srl{V(0), 5}) + K_f(3))
-        V(0) ← V(0) - (sll{V(1), 4} + K_f(0)) xor (V(1) + S) xor ((srl{V(1), 5}) + K_f(1))
-        S ← S - D
-
-    R(0) ← V(0)
-    R(1) ← V(1)
-
-    return R
+  for each round (R) in N do
+    V(1) ← V(1) - (sll{V(0), 4} + K_f(2)) xor (V(0) + S) xor ((srl{V(0), 5}) + K_f(3))
+    V(0) ← V(0) - (sll{V(1), 4} + K_f(0)) xor (V(1) + S) xor ((srl{V(1), 5}) + K_f(1))
+    S ← S - D
+  R(0) ← V(0)
+  R(1) ← V(1)
+  return R
