@@ -34,13 +34,13 @@ signal mem: mem_type:= (
                         ); 
 
 begin
-tmp_loop:for i in 0 to ((MEM_SIZE-2)/7) - 1 generate
-    tmp(7*i+6 downto 7*i) <=mem(conv_integer(addr))(((conv_integer(index(4*i+3 downto 4*i))+1)*7 -1) downto (conv_integer(index(4*i+3 downto 4*i))*7));
-end generate tmp_loop;
+--backwards_order:for i in 0 to ((MEM_SIZE-2)/7) - 1 generate
+--    tmp(7*i+6 downto 7*i) <=mem(conv_integer(addr))(((conv_integer(index(4*i+3 downto 4*i))+1)*7 -1) downto (conv_integer(index(4*i+3 downto 4*i))*7));
+--end generate;
 
---tmp_loop:for i in 0 to ((MEM_SIZE-2)/7) - 1 generate
---    tmp(7*i+6 downto 7*i) <=mem(conv_integer(addr))(((conv_integer(index(3 downto 0))+1)*7 -1) downto (conv_integer(index(3 downto 0))*7));
---end generate tmp_loop;
+correct_order: for i in 0 to ((MEM_SIZE-2)/7) - 1 generate
+    tmp(7*(((MEM_SIZE-2)/7) - 1 - i) + 6 downto 7*(((MEM_SIZE-2)/7) - 1 - i)) <=mem(conv_integer(addr))(((conv_integer(index(4*i+3 downto 4*i))+1)*7 -1) downto (conv_integer(index(4*i+3 downto 4*i))*7));
+end generate;
 
 --tmp15 <= mem(conv_integer(addr))(((conv_integer(index(63 downto 60))+1)*7 -1) downto (conv_integer(index(63 downto 60))*7)); 
 --tmp14 <= mem(conv_integer(addr))(((conv_integer(index(59 downto 56))+1)*7 -1) downto (conv_integer(index(59 downto 56))*7)); 

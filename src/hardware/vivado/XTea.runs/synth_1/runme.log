@@ -15,9 +15,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13431 
+INFO: Helper process launched with PID 18373 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1759.211 ; gain = 153.715 ; free physical = 3819 ; free virtual = 9043
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1759.207 ; gain = 153.715 ; free physical = 1621 ; free virtual = 8269
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'TeaTop' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/top.vhd:26]
 INFO: [Synth 8-3491] module 'TeaEncipher' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:6' bound to instance 'ENCIPHERER' of component 'TeaEncipher' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/top.vhd:84]
@@ -115,9 +115,9 @@ INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [/home/jacob/Workspac
 	Parameter mem_length bound to: 114 - type: integer 
 	Parameter key_length bound to: 226 - type: integer 
 	Parameter count_size_top bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-13408-cygnus/realtime/clk_wiz_0_stub.v:5' bound to instance 'CLK_GEN_PLL' of component 'clk_wiz_0' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:119]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-13408-cygnus/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-13408-cygnus/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-18324-cygnus/realtime/clk_wiz_0_stub.v:5' bound to instance 'CLK_GEN_PLL' of component 'clk_wiz_0' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:119]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-18324-cygnus/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-18324-cygnus/realtime/clk_wiz_0_stub.v:5]
 	Parameter count_size bound to: 10 - type: integer 
 INFO: [Synth 8-3491] module 'counter_generic' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/counter_generic.vhd:36' bound to instance 'COUNT' of component 'counter_generic' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:128]
 INFO: [Synth 8-638] synthesizing module 'counter_generic' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/counter_generic.vhd:43]
@@ -216,7 +216,7 @@ WARNING: [Synth 8-3331] design TeaTop has unconnected port switches[10]
 WARNING: [Synth 8-3331] design TeaTop has unconnected port switches[9]
 WARNING: [Synth 8-3331] design TeaTop has unconnected port switches[8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1814.961 ; gain = 209.465 ; free physical = 3834 ; free virtual = 9059
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1814.957 ; gain = 209.465 ; free physical = 1632 ; free virtual = 8284
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -229,10 +229,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1823.867 ; gain = 218.371 ; free physical = 3834 ; free virtual = 9058
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1823.863 ; gain = 218.371 ; free physical = 1633 ; free virtual = 8285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1823.867 ; gain = 218.371 ; free physical = 3834 ; free virtual = 9058
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1823.863 ; gain = 218.371 ; free physical = 1633 ; free virtual = 8285
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -244,22 +244,24 @@ Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vga.xdc
 Finished Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vga.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TeaTop_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TeaTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2010.461 ; gain = 0.000 ; free physical = 3729 ; free virtual = 8953
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2010.488 ; gain = 0.000 ; free physical = 1530 ; free virtual = 8177
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2010.461 ; gain = 0.000 ; free physical = 3729 ; free virtual = 8953
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2010.488 ; gain = 0.000 ; free physical = 1530 ; free virtual = 8177
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3809 ; free virtual = 9034
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1611 ; free virtual = 8255
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3809 ; free virtual = 9034
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1611 ; free virtual = 8255
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -268,7 +270,7 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/jaco
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3811 ; free virtual = 9036
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1614 ; free virtual = 8257
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'TeaEncipher'
 INFO: [Synth 8-5546] ROM "output_data" won't be mapped to RAM because it is too sparse
@@ -384,7 +386,7 @@ WARNING: [Synth 8-327] inferring latch for variable 't1_reg' [/home/jacob/Worksp
 WARNING: [Synth 8-327] inferring latch for variable 't8_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:70]
 WARNING: [Synth 8-327] inferring latch for variable 'next_sum_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:60]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3801 ; free virtual = 9026
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1603 ; free virtual = 8248
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -620,7 +622,7 @@ WARNING: [Synth 8-3332] Sequential element (DECIPHERER/t8_reg[3]) is unused and 
 INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t2_reg[0]' (LD) to 'ENCIPHERER/t2_reg[3]'
 INFO: [Synth 8-3886] merging instance 'DECIPHERER/t9_reg[0]' (LD) to 'DECIPHERER/t9_reg[3]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3769 ; free virtual = 9000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1552 ; free virtual = 8198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -650,13 +652,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL/clk25' to pin 'VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL/bbstub_clk25/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3600 ; free virtual = 8830
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1427 ; free virtual = 8069
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3596 ; free virtual = 8827
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1424 ; free virtual = 8066
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -668,7 +670,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3618 ; free virtual = 8848
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1422 ; free virtual = 8064
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -692,7 +694,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3617 ; free virtual = 8848
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -705,7 +707,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3617 ; free virtual = 8848
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -717,25 +719,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3617 ; free virtual = 8848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3617 ; free virtual = 8848
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3617 ; free virtual = 8848
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3617 ; free virtual = 8848
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -757,14 +759,14 @@ Report Cell Usage:
 |3     |CARRY4    |   167|
 |4     |DSP48E1   |     2|
 |5     |LUT1      |   191|
-|6     |LUT2      |  1169|
-|7     |LUT3      |   402|
-|8     |LUT4      |    24|
-|9     |LUT5      |    43|
-|10    |LUT6      |   255|
+|6     |LUT2      |  1168|
+|7     |LUT3      |   403|
+|8     |LUT4      |    25|
+|9     |LUT5      |    45|
+|10    |LUT6      |   247|
 |11    |MUXF7     |    31|
 |12    |MUXF8     |     1|
-|13    |FDRE      |    75|
+|13    |FDRE      |    72|
 |14    |FDSE      |     1|
 |15    |LD        |  1378|
 |16    |IBUF      |     9|
@@ -775,31 +777,31 @@ Report Instance Areas:
 +------+-----------------+-----------------------------+------+
 |      |Instance         |Module                       |Cells |
 +------+-----------------+-----------------------------+------+
-|1     |top              |                             |  3773|
-|2     |  DECIPHERER     |TeaDecipher                  |  1662|
+|1     |top              |                             |  3765|
+|2     |  DECIPHERER     |TeaDecipher                  |  1655|
 |3     |  ENCIPHERER     |TeaEncipher                  |  1634|
-|4     |  VGA_CONTROL    |VGATop                       |   445|
-|5     |    VGA_INITIALS |vga_initials_top             |   416|
+|4     |  VGA_CONTROL    |VGATop                       |   444|
+|5     |    VGA_INITIALS |vga_initials_top             |   415|
 |6     |      INIT_in    |vga_initials                 |     4|
 |7     |      INIT_key   |vga_initials__parameterized1 |     4|
 |8     |      COUNT      |counter_generic              |    24|
 |9     |      INIT_out   |vga_initials_0               |     5|
 |10    |      PROM_out   |PROM_IMG                     |   158|
-|11    |      VGA_DRIVER |VGA_VHDL                     |   219|
+|11    |      VGA_DRIVER |VGA_VHDL                     |   218|
 +------+-----------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3617 ; free virtual = 8848
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2010.461 ; gain = 218.371 ; free physical = 3682 ; free virtual = 8912
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2010.461 ; gain = 404.965 ; free physical = 3682 ; free virtual = 8912
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2010.488 ; gain = 218.371 ; free physical = 1486 ; free virtual = 8128
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1486 ; free virtual = 8128
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1579 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.305 ; gain = 0.000 ; free physical = 3631 ; free virtual = 8862
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.332 ; gain = 0.000 ; free physical = 1436 ; free virtual = 8078
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1378 instances were transformed.
   LD => LDCE: 1378 instances
@@ -807,10 +809,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 155 Infos, 152 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2026.305 ; gain = 633.945 ; free physical = 3733 ; free virtual = 8963
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.305 ; gain = 0.000 ; free physical = 3733 ; free virtual = 8963
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2026.332 ; gain = 633.977 ; free physical = 1536 ; free virtual = 8178
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.332 ; gain = 0.000 ; free physical = 1536 ; free virtual = 8178
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/TeaTop.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TeaTop_utilization_synth.rpt -pb TeaTop_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 27 18:55:32 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 17:57:47 2019...

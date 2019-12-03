@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1574909687">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1575338211">
   <File Type="VDS-TIMING-PB" Name="TeaTop_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="TeaTop_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="TeaTop.dcp"/>
@@ -77,6 +77,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="TeaTop"/>
@@ -104,5 +111,4 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>
