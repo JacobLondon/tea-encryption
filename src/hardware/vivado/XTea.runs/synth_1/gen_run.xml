@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1575338211">
-  <File Type="VDS-TIMING-PB" Name="TeaTop_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="TeaTop_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="TeaTop.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="TeaTop_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="TeaTop_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="TeaTop_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="TeaTop.vds"/>
-  <File Type="REPORTS-TCL" Name="TeaTop_reports.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1575866157">
   <File Type="PA-TCL" Name="TeaTop.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="TeaTop_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="TeaTop_reports.tcl"/>
+  <File Type="RDS-RDS" Name="TeaTop.vds"/>
+  <File Type="RDS-UTIL" Name="TeaTop_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="TeaTop_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="TeaTop.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="TeaTop_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="TeaTop_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../src/tea_encipher.vhd">
@@ -81,6 +81,30 @@
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uart_rx.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uart_tx.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/tea_collector.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/ascii_to_hex.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>

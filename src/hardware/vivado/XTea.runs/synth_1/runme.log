@@ -4,7 +4,7 @@
 
 
 ****** Vivado v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
@@ -15,82 +15,99 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18373 
+INFO: Helper process launched with PID 10852 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1759.207 ; gain = 153.715 ; free physical = 1621 ; free virtual = 8269
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 820.430 ; gain = 178.258
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TeaTop' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/top.vhd:26]
-INFO: [Synth 8-3491] module 'TeaEncipher' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:6' bound to instance 'ENCIPHERER' of component 'TeaEncipher' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/top.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'TeaEncipher' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:18]
-WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'input_data' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'sum' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'delta' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'next_sum' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'v1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'k0' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't4' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't2' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't3' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't5' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't6' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'v0' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't7' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'next_v0' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't8' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'k2' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't11' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'k3' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't9' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't10' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't12' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't13' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 't14' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'next_v1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'round' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'next_round' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'num_rounds' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'TeaEncipher' (1#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:18]
-INFO: [Synth 8-3491] module 'TeaDecipher' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:6' bound to instance 'DECIPHERER' of component 'TeaDecipher' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/top.vhd:95]
-INFO: [Synth 8-638] synthesizing module 'TeaDecipher' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:18]
-WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'max_rounds' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'input_data' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'v0' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'k2' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'sum' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't4' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'k3' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't2' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't3' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't5' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't6' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'v1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't7' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'next_v1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't8' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'k0' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't11' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't9' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't10' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't12' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't13' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 't14' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'next_v0' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'delta' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'next_sum' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'round' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'next_round' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'num_rounds' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
-INFO: [Synth 8-256] done synthesizing module 'TeaDecipher' (2#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:18]
-INFO: [Synth 8-3491] module 'VGATop' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_top.vhd:6' bound to instance 'VGA_CONTROL' of component 'VGATop' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/top.vhd:106]
-INFO: [Synth 8-638] synthesizing module 'VGATop' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_top.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'TeaTop' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/top.vhd:28]
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+	Parameter g_DATA_SIZE bound to: 64 - type: integer 
+	Parameter g_KEY_SIZE bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'TeaCollector' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_collector.vhd:5' bound to instance 'UART_COLLECTOR' of component 'TeaCollector' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/top.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'TeaCollector' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_collector.vhd:21]
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+	Parameter g_DATA_SIZE bound to: 64 - type: integer 
+	Parameter g_KEY_SIZE bound to: 128 - type: integer 
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'UartRx' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/uart_rx.vhd:5' bound to instance 'BYTE_RX' of component 'UartRx' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_collector.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'UartRx' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/uart_rx.vhd:18]
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UartRx' (1#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/uart_rx.vhd:18]
+INFO: [Synth 8-3491] module 'AsciiToHex' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/ascii_to_hex.vhd:4' bound to instance 'CONVERT' of component 'AsciiToHex' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_collector.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'AsciiToHex' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/ascii_to_hex.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'AsciiToHex' (2#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/ascii_to_hex.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'TeaCollector' (3#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_collector.vhd:21]
+INFO: [Synth 8-3491] module 'TeaEncipher' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:6' bound to instance 'ENCIPHERER' of component 'TeaEncipher' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/top.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'TeaEncipher' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:18]
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'input_data' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'sum' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'delta' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'next_sum' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'v1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'k0' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't4' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't2' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't3' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't5' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't6' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'v0' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't7' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'next_v0' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't8' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'k2' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't11' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'k3' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't9' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't10' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't12' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't13' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 't14' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'next_v1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'round' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'next_round' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'num_rounds' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'TeaEncipher' (4#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:18]
+INFO: [Synth 8-3491] module 'TeaDecipher' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:6' bound to instance 'DECIPHERER' of component 'TeaDecipher' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/top.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'TeaDecipher' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:18]
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'max_rounds' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'input_data' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'v0' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k2' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'sum' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't4' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k3' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't2' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't3' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't5' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't6' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'v1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't7' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_v1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't8' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k0' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't11' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't9' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't10' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't12' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't13' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't14' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_v0' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'delta' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_sum' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'round' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_round' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'num_rounds' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'TeaDecipher' (5#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:18]
+INFO: [Synth 8-3491] module 'VGATop' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_top.vhd:6' bound to instance 'VGA_CONTROL' of component 'VGATop' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/top.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'VGATop' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_top.vhd:21]
 	Parameter strip_hpixels bound to: 800 - type: integer 
 	Parameter strip_vlines bound to: 512 - type: integer 
 	Parameter strip_hbp bound to: 144 - type: integer 
@@ -102,8 +119,8 @@ INFO: [Synth 8-638] synthesizing module 'VGATop' [/home/jacob/Workspace/vhdl/tea
 	Parameter mem_length bound to: 114 - type: integer 
 	Parameter key_length bound to: 226 - type: integer 
 	Parameter count_size_top bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'vga_initials_top' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:8' bound to instance 'VGA_INITIALS' of component 'vga_initials_top' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_top.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:36]
+INFO: [Synth 8-3491] module 'vga_initials_top' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:8' bound to instance 'VGA_INITIALS' of component 'vga_initials_top' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_top.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:36]
 	Parameter strip_hpixels bound to: 800 - type: integer 
 	Parameter strip_vlines bound to: 512 - type: integer 
 	Parameter strip_hbp bound to: 144 - type: integer 
@@ -115,22 +132,22 @@ INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [/home/jacob/Workspac
 	Parameter mem_length bound to: 114 - type: integer 
 	Parameter key_length bound to: 226 - type: integer 
 	Parameter count_size_top bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-18324-cygnus/realtime/clk_wiz_0_stub.v:5' bound to instance 'CLK_GEN_PLL' of component 'clk_wiz_0' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:119]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-18324-cygnus/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-18324-cygnus/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-16788-aquila/realtime/clk_wiz_0_stub.v:5' bound to instance 'CLK_GEN_PLL' of component 'clk_wiz_0' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:119]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-16788-aquila/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (6#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/.Xil/Vivado-16788-aquila/realtime/clk_wiz_0_stub.v:5]
 	Parameter count_size bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'counter_generic' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/counter_generic.vhd:36' bound to instance 'COUNT' of component 'counter_generic' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:128]
-INFO: [Synth 8-638] synthesizing module 'counter_generic' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/counter_generic.vhd:43]
+INFO: [Synth 8-3491] module 'counter_generic' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/counter_generic.vhd:36' bound to instance 'COUNT' of component 'counter_generic' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'counter_generic' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/counter_generic.vhd:43]
 	Parameter count_size bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter_generic' (4#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/counter_generic.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'counter_generic' (7#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/counter_generic.vhd:43]
 	Parameter hpixels bound to: 800 - type: integer 
 	Parameter vlines bound to: 512 - type: integer 
 	Parameter hbp bound to: 144 - type: integer 
 	Parameter hfp bound to: 784 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter vfp bound to: 511 - type: integer 
-INFO: [Synth 8-3491] module 'VGA_VHDL' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/VGA_VHDL.vhd:37' bound to instance 'VGA_DRIVER' of component 'VGA_VHDL' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:139]
-INFO: [Synth 8-638] synthesizing module 'VGA_VHDL' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/VGA_VHDL.vhd:74]
+INFO: [Synth 8-3491] module 'VGA_VHDL' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/VGA_VHDL.vhd:37' bound to instance 'VGA_DRIVER' of component 'VGA_VHDL' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'VGA_VHDL' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/VGA_VHDL.vhd:74]
 	Parameter H_SP bound to: 128 - type: integer 
 	Parameter H_BP bound to: 16 - type: integer 
 	Parameter H_FP bound to: 16 - type: integer 
@@ -145,68 +162,68 @@ INFO: [Synth 8-638] synthesizing module 'VGA_VHDL' [/home/jacob/Workspace/vhdl/t
 	Parameter vlines bound to: 512 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter vfp bound to: 511 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'VGA_VHDL' (5#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/VGA_VHDL.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'VGA_VHDL' (8#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/VGA_VHDL.vhd:74]
 	Parameter hbp bound to: 144 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter W bound to: 114 - type: integer 
 	Parameter H bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'vga_initials' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:38' bound to instance 'INIT_in' of component 'vga_initials' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:159]
-INFO: [Synth 8-638] synthesizing module 'vga_initials' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:55]
+INFO: [Synth 8-3491] module 'vga_initials' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:38' bound to instance 'INIT_in' of component 'vga_initials' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'vga_initials' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:55]
 	Parameter hbp bound to: 144 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter W bound to: 114 - type: integer 
 	Parameter H bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'vga_initials' (6#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'vga_initials' (9#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:55]
 	Parameter hbp bound to: 144 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter W bound to: 226 - type: integer 
 	Parameter H bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'vga_initials' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:38' bound to instance 'INIT_key' of component 'vga_initials' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:179]
-INFO: [Synth 8-638] synthesizing module 'vga_initials__parameterized1' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:55]
+INFO: [Synth 8-3491] module 'vga_initials' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:38' bound to instance 'INIT_key' of component 'vga_initials' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'vga_initials__parameterized1' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:55]
 	Parameter hbp bound to: 144 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter W bound to: 226 - type: integer 
 	Parameter H bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'vga_initials__parameterized1' (6#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'vga_initials__parameterized1' (9#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:55]
 	Parameter hbp bound to: 144 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter W bound to: 114 - type: integer 
 	Parameter H bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'vga_initials' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:38' bound to instance 'INIT_out' of component 'vga_initials' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:199]
+INFO: [Synth 8-3491] module 'vga_initials' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:38' bound to instance 'INIT_out' of component 'vga_initials' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:199]
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DATA_SIZE bound to: 7 - type: integer 
 	Parameter MEM_SIZE bound to: 114 - type: integer 
-INFO: [Synth 8-3491] module 'PROM_IMG' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/PROM_IMG.vhd:8' bound to instance 'PROM_in' of component 'PROM_IMG' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:220]
-INFO: [Synth 8-638] synthesizing module 'PROM_IMG' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/PROM_IMG.vhd:20]
+INFO: [Synth 8-3491] module 'PROM_IMG' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/PROM_IMG.vhd:8' bound to instance 'PROM_in' of component 'PROM_IMG' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'PROM_IMG' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/PROM_IMG.vhd:20]
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DATA_SIZE bound to: 7 - type: integer 
 	Parameter MEM_SIZE bound to: 114 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'PROM_IMG' (7#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/PROM_IMG.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'PROM_IMG' (10#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/PROM_IMG.vhd:20]
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DATA_SIZE bound to: 7 - type: integer 
 	Parameter MEM_SIZE bound to: 226 - type: integer 
-INFO: [Synth 8-3491] module 'PROM_IMG' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/PROM_IMG.vhd:8' bound to instance 'PROM_key' of component 'PROM_IMG' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:231]
-INFO: [Synth 8-638] synthesizing module 'PROM_IMG__parameterized1' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/PROM_IMG.vhd:20]
+INFO: [Synth 8-3491] module 'PROM_IMG' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/PROM_IMG.vhd:8' bound to instance 'PROM_key' of component 'PROM_IMG' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'PROM_IMG__parameterized1' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/PROM_IMG.vhd:20]
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DATA_SIZE bound to: 7 - type: integer 
 	Parameter MEM_SIZE bound to: 226 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'PROM_IMG__parameterized1' (7#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/PROM_IMG.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'PROM_IMG__parameterized1' (10#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/PROM_IMG.vhd:20]
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DATA_SIZE bound to: 7 - type: integer 
 	Parameter MEM_SIZE bound to: 114 - type: integer 
-INFO: [Synth 8-3491] module 'PROM_IMG' declared at '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/PROM_IMG.vhd:8' bound to instance 'PROM_out' of component 'PROM_IMG' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:242]
-WARNING: [Synth 8-614] signal 'R1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
-WARNING: [Synth 8-614] signal 'G1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
-WARNING: [Synth 8-614] signal 'B1' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
-WARNING: [Synth 8-614] signal 'R2' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
-WARNING: [Synth 8-614] signal 'G2' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
-WARNING: [Synth 8-614] signal 'B2' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
-WARNING: [Synth 8-614] signal 'R3' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
-WARNING: [Synth 8-614] signal 'G3' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
-WARNING: [Synth 8-614] signal 'B3' is read in the process but is not in the sensitivity list [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
-INFO: [Synth 8-256] done synthesizing module 'vga_initials_top' (8#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials_top.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'VGATop' (9#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_top.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'TeaTop' (10#1) [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/top.vhd:26]
+INFO: [Synth 8-3491] module 'PROM_IMG' declared at 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/PROM_IMG.vhd:8' bound to instance 'PROM_out' of component 'PROM_IMG' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:242]
+WARNING: [Synth 8-614] signal 'R1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
+WARNING: [Synth 8-614] signal 'G1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
+WARNING: [Synth 8-614] signal 'B1' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
+WARNING: [Synth 8-614] signal 'R2' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
+WARNING: [Synth 8-614] signal 'G2' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
+WARNING: [Synth 8-614] signal 'B2' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
+WARNING: [Synth 8-614] signal 'R3' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
+WARNING: [Synth 8-614] signal 'G3' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
+WARNING: [Synth 8-614] signal 'B3' is read in the process but is not in the sensitivity list [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:254]
+INFO: [Synth 8-256] done synthesizing module 'vga_initials_top' (11#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials_top.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'VGATop' (12#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_top.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'TeaTop' (13#1) [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/top.vhd:28]
 WARNING: [Synth 8-3331] design TeaTop has unconnected port switches[15]
 WARNING: [Synth 8-3331] design TeaTop has unconnected port switches[14]
 WARNING: [Synth 8-3331] design TeaTop has unconnected port switches[13]
@@ -216,7 +233,7 @@ WARNING: [Synth 8-3331] design TeaTop has unconnected port switches[10]
 WARNING: [Synth 8-3331] design TeaTop has unconnected port switches[9]
 WARNING: [Synth 8-3331] design TeaTop has unconnected port switches[8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1814.957 ; gain = 209.465 ; free physical = 1632 ; free virtual = 8284
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 886.582 ; gain = 244.410
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -229,49 +246,51 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1823.863 ; gain = 218.371 ; free physical = 1633 ; free virtual = 8285
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 886.582 ; gain = 244.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1823.863 ; gain = 218.371 ; free physical = 1633 ; free virtual = 8285
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 886.582 ; gain = 244.410
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL'
-Finished Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL'
-Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vga.xdc]
-Finished Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vga.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TeaTop_propImpl.xdc].
+Parsing XDC File [c:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL'
+Finished Parsing XDC File [c:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL'
+Parsing XDC File [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vga.xdc]
+Finished Parsing XDC File [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TeaTop_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TeaTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2010.488 ; gain = 0.000 ; free physical = 1530 ; free virtual = 8177
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1033.063 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2010.488 ; gain = 0.000 ; free physical = 1530 ; free virtual = 8177
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1033.063 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1611 ; free virtual = 8255
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1033.063 ; gain = 390.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1611 ; free virtual = 8255
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1033.063 ; gain = 390.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1614 ; free virtual = 8257
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1033.063 ; gain = 390.891
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UartRx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TeaCollector'
 INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'TeaEncipher'
 INFO: [Synth 8-5546] ROM "output_data" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "next_v1" won't be mapped to RAM because it is too sparse
@@ -297,17 +316,35 @@ INFO: [Synth 8-5546] ROM "round" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "next_sum" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "sum" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'G_reg' into 'R_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:96]
-INFO: [Synth 8-4471] merging register 'B_reg' into 'R_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:97]
-INFO: [Synth 8-4471] merging register 'green_reg[2:0]' into 'red_reg[2:0]' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:90]
-INFO: [Synth 8-4471] merging register 'blue_reg[2:0]' into 'red_reg[2:0]' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:91]
-INFO: [Synth 8-4471] merging register 'G_reg' into 'R_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:96]
-INFO: [Synth 8-4471] merging register 'B_reg' into 'R_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:97]
-INFO: [Synth 8-4471] merging register 'green_reg[2:0]' into 'red_reg[2:0]' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:90]
-INFO: [Synth 8-4471] merging register 'blue_reg[2:0]' into 'red_reg[2:0]' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/vga_initials.vhd:91]
+INFO: [Synth 8-4471] merging register 'G_reg' into 'R_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:96]
+INFO: [Synth 8-4471] merging register 'B_reg' into 'R_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:97]
+INFO: [Synth 8-4471] merging register 'green_reg[2:0]' into 'red_reg[2:0]' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:90]
+INFO: [Synth 8-4471] merging register 'blue_reg[2:0]' into 'red_reg[2:0]' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:91]
+INFO: [Synth 8-4471] merging register 'G_reg' into 'R_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:96]
+INFO: [Synth 8-4471] merging register 'B_reg' into 'R_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:97]
+INFO: [Synth 8-4471] merging register 'green_reg[2:0]' into 'red_reg[2:0]' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:90]
+INFO: [Synth 8-4471] merging register 'blue_reg[2:0]' into 'red_reg[2:0]' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/vga_initials.vhd:91]
 INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'output_data_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:152]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                            00001 |                              000
+             s_start_bit |                            00010 |                              001
+          s_receive_bits |                            00100 |                              010
+              s_stop_bit |                            01000 |                              011
+              s_clean_up |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UartRx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_data |                              001 |                               00
+               s_convert |                              010 |                               10
+                   s_key |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'TeaCollector'
+WARNING: [Synth 8-327] inferring latch for variable 'output_data_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:152]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -338,55 +375,55 @@ WARNING: [Synth 8-327] inferring latch for variable 'output_data_reg' [/home/jac
                      s24 |        1000000000000000000000000 |                            11000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'TeaEncipher'
-WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:54]
-WARNING: [Synth 8-327] inferring latch for variable 'v1_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:73]
-WARNING: [Synth 8-327] inferring latch for variable 'v0_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:74]
-WARNING: [Synth 8-327] inferring latch for variable 't14_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:72]
-WARNING: [Synth 8-327] inferring latch for variable 't7_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:65]
-WARNING: [Synth 8-327] inferring latch for variable 'next_v0_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:75]
-WARNING: [Synth 8-327] inferring latch for variable 'next_v1_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:76]
-WARNING: [Synth 8-327] inferring latch for variable 't13_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:71]
-WARNING: [Synth 8-327] inferring latch for variable 't12_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:70]
-WARNING: [Synth 8-327] inferring latch for variable 't10_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:68]
-WARNING: [Synth 8-327] inferring latch for variable 't9_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:67]
-WARNING: [Synth 8-327] inferring latch for variable 't11_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:69]
-WARNING: [Synth 8-327] inferring latch for variable 'sum_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:55]
-WARNING: [Synth 8-327] inferring latch for variable 't8_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:66]
-WARNING: [Synth 8-327] inferring latch for variable 't6_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:64]
-WARNING: [Synth 8-327] inferring latch for variable 't5_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:63]
-WARNING: [Synth 8-327] inferring latch for variable 't3_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:61]
-WARNING: [Synth 8-327] inferring latch for variable 't2_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:60]
-WARNING: [Synth 8-327] inferring latch for variable 't4_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 't1_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:59]
-WARNING: [Synth 8-327] inferring latch for variable 'round_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:57]
-WARNING: [Synth 8-327] inferring latch for variable 'next_round_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:58]
-WARNING: [Synth 8-327] inferring latch for variable 'next_sum_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_encipher.vhd:56]
-WARNING: [Synth 8-327] inferring latch for variable 'output_data_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:158]
-WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:58]
-WARNING: [Synth 8-327] inferring latch for variable 'v1_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:77]
-WARNING: [Synth 8-327] inferring latch for variable 'v0_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:78]
-WARNING: [Synth 8-327] inferring latch for variable 'round_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:61]
-WARNING: [Synth 8-327] inferring latch for variable 'next_v1_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:80]
-WARNING: [Synth 8-327] inferring latch for variable 'next_v0_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:79]
-WARNING: [Synth 8-327] inferring latch for variable 'next_round_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 't7_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:69]
-WARNING: [Synth 8-327] inferring latch for variable 't14_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:76]
-WARNING: [Synth 8-327] inferring latch for variable 't6_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:68]
-WARNING: [Synth 8-327] inferring latch for variable 't5_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:67]
-WARNING: [Synth 8-327] inferring latch for variable 't13_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:75]
-WARNING: [Synth 8-327] inferring latch for variable 't12_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:74]
-WARNING: [Synth 8-327] inferring latch for variable 't3_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:65]
-WARNING: [Synth 8-327] inferring latch for variable 't2_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:64]
-WARNING: [Synth 8-327] inferring latch for variable 't4_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:66]
-WARNING: [Synth 8-327] inferring latch for variable 't10_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:72]
-WARNING: [Synth 8-327] inferring latch for variable 't9_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:71]
-WARNING: [Synth 8-327] inferring latch for variable 't11_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:73]
-WARNING: [Synth 8-327] inferring latch for variable 'sum_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:59]
-WARNING: [Synth 8-327] inferring latch for variable 't1_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:63]
-WARNING: [Synth 8-327] inferring latch for variable 't8_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:70]
-WARNING: [Synth 8-327] inferring latch for variable 'next_sum_reg' [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'v1_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'v0_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 't14_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 't7_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'next_v0_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'next_v1_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 't13_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 't12_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 't10_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 't9_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 't11_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'sum_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 't8_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:66]
+WARNING: [Synth 8-327] inferring latch for variable 't6_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 't5_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 't3_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 't2_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 't4_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 't1_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'round_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'next_round_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'next_sum_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_encipher.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'output_data_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:158]
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'v1_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'v0_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'round_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'next_v1_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:80]
+WARNING: [Synth 8-327] inferring latch for variable 'next_v0_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:79]
+WARNING: [Synth 8-327] inferring latch for variable 'next_round_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 't7_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 't14_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 't6_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 't5_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 't13_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 't12_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 't3_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 't2_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 't4_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:66]
+WARNING: [Synth 8-327] inferring latch for variable 't10_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 't9_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 't11_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'sum_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 't1_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 't8_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'next_sum_reg' [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:60]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1603 ; free virtual = 8248
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1033.063 ; gain = 390.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -401,31 +438,57 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     32 Bit       Adders := 16    
 	   3 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
 	   3 Input     12 Bit       Adders := 6     
 	   3 Input     11 Bit       Adders := 3     
 	   2 Input     10 Bit       Adders := 18    
 	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 8     
 +---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
 	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
-	                3 Bit    Registers := 3     
-	                1 Bit    Registers := 10    
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 12    
 +---Multipliers : 
 	                 8x32  Multipliers := 1     
 +---Muxes : 
 	   6 Input    224 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 2     
+	   3 Input    128 Bit        Muxes := 1     
 	   6 Input    112 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
 	  25 Input     32 Bit        Muxes := 20    
 	  26 Input     32 Bit        Muxes := 17    
+	   2 Input     31 Bit        Muxes := 3     
 	  25 Input     25 Bit        Muxes := 1     
 	   2 Input     25 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
 	  25 Input      8 Bit        Muxes := 2     
 	  26 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
 	  16 Input      7 Bit        Muxes := 64    
-	   2 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	  11 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 4     
 	  25 Input      1 Bit        Muxes := 23    
 	  26 Input      1 Bit        Muxes := 24    
 ---------------------------------------------------------------------------------
@@ -435,6 +498,50 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module UartRx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+Module AsciiToHex 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	  11 Input      4 Bit        Muxes := 1     
+Module TeaCollector 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+	   3 Input    128 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 4     
 Module TeaEncipher 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -524,7 +631,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/src/tea_decipher.vhd:40]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/src/tea_decipher.vhd:40]
 DSP Report: Generating DSP max_rounds, operation Mode is: (A:0x179b9)*B.
 DSP Report: operator max_rounds is absorbed into DSP max_rounds.
 DSP Report: operator max_rounds is absorbed into DSP max_rounds.
@@ -579,50 +686,42 @@ INFO: [Synth 8-3886] merging instance 'VGA_CONTROL/VGA_INITIALS/INIT_key/red_reg
 INFO: [Synth 8-3886] merging instance 'VGA_CONTROL/VGA_INITIALS/INIT_key/red_reg[1]' (FDCE) to 'VGA_CONTROL/VGA_INITIALS/INIT_key/red_reg[2]'
 INFO: [Synth 8-3886] merging instance 'vga_initials:/red_reg[0]' (FDCE) to 'vga_initials:/red_reg[1]'
 INFO: [Synth 8-3886] merging instance 'vga_initials:/red_reg[1]' (FDCE) to 'vga_initials:/red_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t9_reg[1]' (LD) to 'ENCIPHERER/t9_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t9_reg[2]' (LD) to 'ENCIPHERER/t9_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ENCIPHERER/t9_reg[3] )
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t2_reg[1]' (LD) to 'ENCIPHERER/t2_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t2_reg[2]' (LD) to 'ENCIPHERER/t2_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t12_reg[29]' (LD) to 'ENCIPHERER/t12_reg[30]'
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t12_reg[30]' (LD) to 'ENCIPHERER/t12_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ENCIPHERER/t12_reg[31] )
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t5_reg[28]' (LD) to 'ENCIPHERER/t5_reg[29]'
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t5_reg[29]' (LD) to 'ENCIPHERER/t5_reg[30]'
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t5_reg[30]' (LD) to 'ENCIPHERER/t5_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ENCIPHERER/t5_reg[31] )
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t2_reg[1]' (LD) to 'DECIPHERER/t2_reg[3]'
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t2_reg[2]' (LD) to 'DECIPHERER/t2_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DECIPHERER/t2_reg[3] )
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t9_reg[1]' (LD) to 'DECIPHERER/t9_reg[2]'
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t9_reg[2]' (LD) to 'DECIPHERER/t9_reg[3]'
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t5_reg[29]' (LD) to 'DECIPHERER/t5_reg[31]'
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t5_reg[30]' (LD) to 'DECIPHERER/t5_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DECIPHERER/t5_reg[31] )
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t12_reg[28]' (LD) to 'DECIPHERER/t12_reg[31]'
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t12_reg[29]' (LD) to 'DECIPHERER/t12_reg[31]'
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t12_reg[30]' (LD) to 'DECIPHERER/t12_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DECIPHERER/t12_reg[31] )
 WARNING: [Synth 8-3332] Sequential element (ENCIPHERER/done_reg) is unused and will be removed from module TeaTop.
-WARNING: [Synth 8-3332] Sequential element (ENCIPHERER/t12_reg[31]) is unused and will be removed from module TeaTop.
-WARNING: [Synth 8-3332] Sequential element (ENCIPHERER/t9_reg[3]) is unused and will be removed from module TeaTop.
 WARNING: [Synth 8-3332] Sequential element (ENCIPHERER/t11_reg[31]) is unused and will be removed from module TeaTop.
 WARNING: [Synth 8-3332] Sequential element (ENCIPHERER/t8_reg[3]) is unused and will be removed from module TeaTop.
-WARNING: [Synth 8-3332] Sequential element (ENCIPHERER/t5_reg[31]) is unused and will be removed from module TeaTop.
 WARNING: [Synth 8-3332] Sequential element (ENCIPHERER/t4_reg[31]) is unused and will be removed from module TeaTop.
 WARNING: [Synth 8-3332] Sequential element (ENCIPHERER/t1_reg[3]) is unused and will be removed from module TeaTop.
 WARNING: [Synth 8-3332] Sequential element (DECIPHERER/done_reg) is unused and will be removed from module TeaTop.
-WARNING: [Synth 8-3332] Sequential element (DECIPHERER/t5_reg[31]) is unused and will be removed from module TeaTop.
-WARNING: [Synth 8-3332] Sequential element (DECIPHERER/t12_reg[31]) is unused and will be removed from module TeaTop.
-WARNING: [Synth 8-3332] Sequential element (DECIPHERER/t2_reg[3]) is unused and will be removed from module TeaTop.
 WARNING: [Synth 8-3332] Sequential element (DECIPHERER/t4_reg[31]) is unused and will be removed from module TeaTop.
 WARNING: [Synth 8-3332] Sequential element (DECIPHERER/t11_reg[31]) is unused and will be removed from module TeaTop.
 WARNING: [Synth 8-3332] Sequential element (DECIPHERER/t1_reg[3]) is unused and will be removed from module TeaTop.
 WARNING: [Synth 8-3332] Sequential element (DECIPHERER/t8_reg[3]) is unused and will be removed from module TeaTop.
-INFO: [Synth 8-3886] merging instance 'ENCIPHERER/t2_reg[0]' (LD) to 'ENCIPHERER/t2_reg[3]'
-INFO: [Synth 8-3886] merging instance 'DECIPHERER/t9_reg[0]' (LD) to 'DECIPHERER/t9_reg[3]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[14]' (FDRE) to 'UART_COLLECTOR/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[11]' (FDRE) to 'UART_COLLECTOR/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[9]' (FDRE) to 'UART_COLLECTOR/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[8]' (FDRE) to 'UART_COLLECTOR/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[13]' (FDRE) to 'UART_COLLECTOR/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[12]' (FDRE) to 'UART_COLLECTOR/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[10]' (FDRE) to 'UART_COLLECTOR/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[7]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[30]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[29]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[28]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[27]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[26]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[25]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[24]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[23]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[22]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[21]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[20]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[19]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[18]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[17]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART_COLLECTOR/state_index_reg[16]' (FDRE) to 'UART_COLLECTOR/state_index_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\UART_COLLECTOR/state_index_reg[15] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1552 ; free virtual = 8198
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1033.063 ; gain = 390.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -652,13 +751,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL/clk25' to pin 'VGA_CONTROL/VGA_INITIALS/CLK_GEN_PLL/bbstub_clk25/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1427 ; free virtual = 8069
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1045.480 ; gain = 403.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1424 ; free virtual = 8066
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1090.551 ; gain = 448.379
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -670,7 +769,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1422 ; free virtual = 8064
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1090.867 ; gain = 448.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -694,7 +793,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1096.652 ; gain = 454.480
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -707,7 +806,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1096.652 ; gain = 454.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -719,25 +818,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1096.652 ; gain = 454.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1096.652 ; gain = 454.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1096.652 ; gain = 454.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1096.652 ; gain = 454.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -756,20 +855,20 @@ Report Cell Usage:
 +------+----------+------+
 |1     |clk_wiz_0 |     1|
 |2     |BUFG      |    12|
-|3     |CARRY4    |   167|
+|3     |CARRY4    |   175|
 |4     |DSP48E1   |     2|
-|5     |LUT1      |   191|
-|6     |LUT2      |  1168|
-|7     |LUT3      |   403|
-|8     |LUT4      |    25|
-|9     |LUT5      |    45|
-|10    |LUT6      |   247|
-|11    |MUXF7     |    31|
-|12    |MUXF8     |     1|
-|13    |FDRE      |    72|
-|14    |FDSE      |     1|
-|15    |LD        |  1378|
-|16    |IBUF      |     9|
+|5     |LUT1      |    90|
+|6     |LUT2      |  1397|
+|7     |LUT3      |   432|
+|8     |LUT4      |   192|
+|9     |LUT5      |   612|
+|10    |LUT6      |   854|
+|11    |MUXF7     |   116|
+|12    |MUXF8     |    11|
+|13    |FDRE      |   321|
+|14    |FDSE      |     3|
+|15    |LD        |  1404|
+|16    |IBUF      |    10|
 |17    |OBUF      |    11|
 +------+----------+------+
 
@@ -777,42 +876,48 @@ Report Instance Areas:
 +------+-----------------+-----------------------------+------+
 |      |Instance         |Module                       |Cells |
 +------+-----------------+-----------------------------+------+
-|1     |top              |                             |  3765|
-|2     |  DECIPHERER     |TeaDecipher                  |  1655|
-|3     |  ENCIPHERER     |TeaEncipher                  |  1634|
-|4     |  VGA_CONTROL    |VGATop                       |   444|
-|5     |    VGA_INITIALS |vga_initials_top             |   415|
-|6     |      INIT_in    |vga_initials                 |     4|
-|7     |      INIT_key   |vga_initials__parameterized1 |     4|
-|8     |      COUNT      |counter_generic              |    24|
-|9     |      INIT_out   |vga_initials_0               |     5|
-|10    |      PROM_out   |PROM_IMG                     |   158|
-|11    |      VGA_DRIVER |VGA_VHDL                     |   218|
+|1     |top              |                             |  5644|
+|2     |  DECIPHERER     |TeaDecipher                  |  1677|
+|3     |  ENCIPHERER     |TeaEncipher                  |  1717|
+|4     |  UART_COLLECTOR |TeaCollector                 |   580|
+|5     |    BYTE_RX      |UartRx                       |    62|
+|6     |  VGA_CONTROL    |VGATop                       |  1637|
+|7     |    VGA_INITIALS |vga_initials_top             |  1606|
+|8     |      INIT_in    |vga_initials                 |     4|
+|9     |      INIT_out   |vga_initials_0               |     4|
+|10    |      INIT_key   |vga_initials__parameterized1 |     4|
+|11    |      COUNT      |counter_generic              |    24|
+|12    |      PROM_in    |PROM_IMG                     |   102|
+|13    |      PROM_key   |PROM_IMG__parameterized1     |   239|
+|14    |      PROM_out   |PROM_IMG_1                   |   102|
+|15    |      VGA_DRIVER |VGA_VHDL                     |  1125|
 +------+-----------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1421 ; free virtual = 8063
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1096.652 ; gain = 454.480
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2010.488 ; gain = 218.371 ; free physical = 1486 ; free virtual = 8128
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 2010.488 ; gain = 404.996 ; free physical = 1486 ; free virtual = 8128
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1096.652 ; gain = 308.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1096.652 ; gain = 454.480
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1579 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1708 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.332 ; gain = 0.000 ; free physical = 1436 ; free virtual = 8078
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1112.727 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1378 instances were transformed.
-  LD => LDCE: 1378 instances
+  A total of 1404 instances were transformed.
+  LD => LDCE: 1404 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-155 Infos, 152 Warnings, 0 Critical Warnings and 0 Errors encountered.
+166 Infos, 146 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2026.332 ; gain = 633.977 ; free physical = 1536 ; free virtual = 8178
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.332 ; gain = 0.000 ; free physical = 1536 ; free virtual = 8178
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1112.727 ; gain = 725.363
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1112.727 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/TeaTop.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/TeaTop.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TeaTop_utilization_synth.rpt -pb TeaTop_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 17:57:47 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 20:37:22 2019...

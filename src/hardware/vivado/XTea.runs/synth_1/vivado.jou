@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Dec  2 17:56:56 2019
-# Process ID: 18324
-# Current directory: /home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1
-# Command line: vivado -log TeaTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TeaTop.tcl
-# Log file: /home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/TeaTop.vds
-# Journal file: /home/jacob/Workspace/vhdl/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/vivado.jou
+# Start of session at: Sun Dec  8 20:36:03 2019
+# Process ID: 16788
+# Current directory: C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.runs/synth_1
+# Command line: vivado.exe -log TeaTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TeaTop.tcl
+# Log file: C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.runs/synth_1/TeaTop.vds
+# Journal file: C:/Users/jelon/Documents/Workspaces/VHDL/tea-encryption/src/hardware/vivado/XTea.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source TeaTop.tcl -notrace

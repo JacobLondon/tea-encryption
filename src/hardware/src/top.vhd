@@ -15,6 +15,8 @@ entity TeaTop is
         rst : in STD_LOGIC;
         switches : in STD_LOGIC_VECTOR(15 downto 0);
 
+        rx : in STD_LOGIC;
+
         hsync : out STD_LOGIC;
         vsync : out STD_LOGIC;
         red  : out STD_LOGIC_VECTOR (2 downto 0);
@@ -63,6 +65,22 @@ architecture Behavioral of TeaTop is
             blue  : out STD_LOGIC_VECTOR (2 downto 0)
         );
     end component;
+    
+    component TeaCollector
+        Generic ( 
+            g_CLK_PER_BIT : POSITIVE:= 100000000 / 1000000;                  -- FPGA clock / baud rate
+            g_DATA_SIZE   : POSITIVE:= 64;
+            g_KEY_SIZE    : POSITIVE:= 128
+        );
+        Port ( 
+            i_clk         : in  STD_LOGIC;
+            i_rx          : in  STD_LOGIC;
+            i_rst         : in  STD_LOGIC;
+            --co_done       : out STD_LOGIC;
+            o_data        : out UNSIGNED(g_DATA_SIZE - 1 downto 0);
+            o_key         : out UNSIGNED(g_KEY_SIZE - 1 downto 0)
+        );
+    end component;
 
     signal num_rounds : UNSIGNED(7 downto 0);
 
@@ -74,20 +92,29 @@ architecture Behavioral of TeaTop is
 
 begin
 
-    key <= x"FEEDBEEF00C0FFEEF00000110FACADE0";
-    encipher_input <= x"DEADBEEFFEEBDAED";
+    --key <= x"FEEDBEEF00C0FFEEF00000110FACADE0";
+    --encipher_input <= x"DEADBEEFFEEBDAED";
     
 
     num_rounds <= UNSIGNED(switches(7 downto 0));
     garbage <= switches(15 downto 8);
+    
+    UART_COLLECTOR: TeaCollector
+        port map (
+            i_clk => clk,
+            i_rx => rx,
+            i_rst => rst,
+            o_data => encipher_input,
+            o_key => key
+        );
     
     ENCIPHERER: TeaEncipher
         port map (
             clk => clk,
             rst => rst,
             num_rounds => num_rounds,
-            input_data => encipher_input,
-            key => key,
+            input_data => UNSIGNED(encipher_input),
+            key => UNSIGNED(key),
             output_data => encipher_output,
             done => encipher_done
         );
